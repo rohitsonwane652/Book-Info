@@ -33,10 +33,6 @@ let books = [
 ];
 
 
-app.get('/',(req,res)=>{
-    res.send('Hello World');
-});
-
 //Add Book
 app.post('/book',(req,res)=>{
     const newBook = req.body;
