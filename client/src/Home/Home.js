@@ -8,7 +8,7 @@ function Home() {
 
     useEffect(()=>{
         async function fetchData(){
-            const response = await axios.get(`http://localhost:5000/book`);
+            const response = await axios.get(`https://my-book-info.herokuapp.com/book`);
             setBooks(response.data.data); 
         }
         fetchData();

@@ -16,7 +16,7 @@ function AddBook() {
   const navigate = useNavigate();
 
     async function addBook(){
-    const response = await axios.post(`http://localhost:5000/book`,bookData);
+    const response = await axios.post(`https://my-book-info.herokuapp.com/book`,bookData);
     {
       alert(response.data.message);
       navigate("/");

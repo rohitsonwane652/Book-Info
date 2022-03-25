@@ -18,14 +18,14 @@ function UpdateBook() {
 
   useEffect(()=>{
       async function getBook(){
-        const response = await axios.get(`${process.env.BASE_URL}/book/search/${isbn}`);
+        const response = await axios.get(`https://my-book-info.herokuapp.com/book/search/${isbn}`);
         setBookData(response.data.data);
       }
       getBook();
     },[isbn]);
 
     const updateBook = async ()=>{
-        await axios.post(`${process.env.BASE_URL}/book/update/${isbn}`,bookData);
+        await axios.post(`https://my-book-info.herokuapp.com/book/update/${isbn}`,bookData);
         navigate('/');
     }
   

@@ -17,7 +17,7 @@ function SearchBook() {
         var data = document.getElementById('search-data');
         data.style.display = 'flex';
         e.preventDefault();
-        const response = await axios.get(`${process.env.BASE_URL}/book/search/${isbn}`);
+        const response = await axios.get(`https://my-book-info.herokuapp.com/book/search/${isbn}`);
         setBook(response.data.data);
     };
 
