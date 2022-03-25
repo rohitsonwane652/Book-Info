@@ -1,0 +1,14 @@
+.data-form{
+    border: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20rem;
+    width: 30rem;
+}
+
+.addData-input{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+}
