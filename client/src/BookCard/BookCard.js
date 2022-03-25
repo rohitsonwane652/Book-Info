@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 function BookCard({isbn,name,author,price}) {
 
     async function deleteBook(isbn){
-        const response = await axios.post(`${process.env.BASE_URL}/book/${isbn}`)
+        const response = await axios.post(`https://my-book-info.herokuapp.com/book/${isbn}`)
         alert(response.data.message);
         console.log("Book Deleted");
     }
